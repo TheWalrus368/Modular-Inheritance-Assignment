@@ -64,8 +64,20 @@ public class Shapes2D {
         return length*width;
     }
 
+    public void results(){
+        System.out.printf("%6s %10s %12s","Length","Width","Area");
+        System.out.println();
+        System.out.printf("%6.2f %10.2f %12.2f",length,width,recArea()); 
+        System.out.println();
+    }
+
     public static void main(String[] args){
         Shapes2D rec = new Shapes2D();
         rec.user();
+        rec.results();
+
+        Circle cir = new Circle();
+        cir.user();
+        cir.results();
     }
 }

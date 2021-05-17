@@ -27,4 +27,12 @@ public class Circle extends Shapes2D{
     public double circleArea(){
         return Pi*(radius*radius);
     }
+
+    @Override
+    public void results(){
+        System.out.printf("%6s %10s","Radius","Area");
+        System.out.println();
+        System.out.printf("%6.2f %10.2f",radius,circleArea()); 
+        System.out.println();
+    }
 }
